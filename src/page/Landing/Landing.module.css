@@ -1,0 +1,14 @@
+.mainbody{
+    display: flex;
+    position: fixed;
+    left: 10%;
+    right: 10%;
+}
+
+.display_section{
+    display: flex;
+    background-color: #626262;
+    border-radius: 0.8rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
