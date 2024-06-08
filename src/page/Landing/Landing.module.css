@@ -23,3 +23,10 @@
     justify-content: space-evenly;
 }
 
+.display_section_lower{
+    display: flex;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 250px;
+    justify-content: space-evenly;
+}

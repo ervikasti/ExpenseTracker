@@ -11,6 +11,10 @@ export default function Landing(){
                 <Balancecard></Balancecard>
                 <Piechart></Piechart>
             </div>
+            <div className={styles.display_section_lower}>
+                <h1>Recent Transacation</h1>
+                <h1>Top Expenses</h1>
+            </div>
         </div>
         
     )
