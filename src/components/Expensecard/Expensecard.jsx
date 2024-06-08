@@ -7,7 +7,7 @@ export default function Expensecard(){
     }
 
     return(
-    <div>
+    
         <Card title={'Expensecard'} price={'500'} btnName={'Add Expense'} funcHandler={funcHandler}></Card>
-    </div>)
+    )
 }

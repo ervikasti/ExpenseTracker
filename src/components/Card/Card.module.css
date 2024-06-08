@@ -3,8 +3,11 @@
   max-width: 355px;  
   background-color: #9B9B9B;
   border-radius: 15px;
+  margin:1rem 0.2rem;
+  padding: 0.5rem;
   align-items: center;
-  height: 181px;
-  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
 }
+
 
