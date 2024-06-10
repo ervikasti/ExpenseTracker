@@ -35,8 +35,7 @@ export default function Landing(){
         if(value.price < balance){
             setExpense(expense => Number(expense)+Number(value.price));
             setBalance(balance => Number(balance)-Number(value.price));
-            list.push(value);
-            setTranx(list);
+            setTranx((previousStateArray)=>[...previousStateArray, value]);
         }else{
             console.log("No balance left");
         } 
@@ -46,11 +45,6 @@ export default function Landing(){
             console.log(e.key);
     }
 
-    // const tranxHandler = () =>{
-    //     setTranx({...dataList,});
-    // };
-
-    // useEffect((balance,expense)=>{balanceHandler(Number(balance)-Number(expense))},[expense]);
 
     return(
         <div className={styles.mainbody}>
@@ -58,7 +52,7 @@ export default function Landing(){
             <div className={styles.display_section}>
                 <Expensecard expense={expense} expenseHandler={expenseHandler}></Expensecard>
                 <Balancecard balance={balance} balanceHandler={balanceHandler}></Balancecard>
-                <Piechart></Piechart>
+                <Piechart data={tranx}></Piechart>
             </div>
             <div className={styles.display_section_lower}>
                 <div className={styles.section_lower_data}>
