@@ -5,17 +5,13 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export default function Category() {
-  const [category, setCategory] = React.useState('');
-
-  const handleChange = (event) => {
-    setCategory(event.target.value);
-  };
+export default function Category({handleChange, category}) {
+ 
 
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label">Category</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -23,9 +19,9 @@ export default function Category() {
           label="Category"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Entertainment</MenuItem>
-          <MenuItem value={20}>Food</MenuItem>
-          <MenuItem value={30}>Travel</MenuItem>
+          <MenuItem value={'Entertainment'}>Entertainment</MenuItem>
+          <MenuItem value={'Food'}>Food</MenuItem>
+          <MenuItem value={'Travel'}>Travel</MenuItem>
         </Select>
       </FormControl>
     </Box>
